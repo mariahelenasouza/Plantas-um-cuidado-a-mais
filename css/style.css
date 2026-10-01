@@ -1,0 +1,277 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f8f3;
+    color: #333;
+}
+
+
+/* ==============================
+   CABEÇALHO
+================================= */
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+
+/* ==============================
+   MENU
+================================= */
+
+nav {
+    background-color: #1b5e20;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a5d6a7;
+}
+
+
+/* ==============================
+   BANNER - PÁGINA INICIAL
+================================= */
+
+.banner {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #c8e6c9;
+}
+
+.banner h2 {
+    font-size: 40px;
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* ==============================
+   CONTEÚDO DA PÁGINA INICIAL
+================================= */
+
+.conteudo {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.conteudo > h2 {
+    color: #2e7d32;
+}
+
+
+/* ==============================
+   CARDS
+================================= */
+
+.cards,
+.servicos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   PÁGINA DE SERVIÇOS
+================================= */
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.container .card {
+    width: 260px;
+}
+
+
+/* ==============================
+   PÁGINA SOBRE
+================================= */
+
+main:not(.container):not(.formulario) {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    line-height: 1.7;
+}
+
+main:not(.container):not(.formulario) h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+main:not(.container):not(.formulario) h2:first-child {
+    margin-top: 0;
+}
+
+main:not(.container):not(.formulario) p {
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   FORMULÁRIO
+================================= */
+
+.formulario {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+
+/* ==============================
+   RODAPÉ
+================================= */
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .banner {
+        padding: 50px 20px;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .container .card {
+        width: 100%;
+    }
+
+    .formulario {
+        margin: 25px 15px;
+    }
+}
